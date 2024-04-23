@@ -35,7 +35,13 @@
       <input id="base" type="color" name="base" value="#ffc600" />
     </div>
 
-    <img src="./ac2.jpg" width="500px" />
+    <!-- <img src="./ac2.jpg" width="500px" /> -->
+    <p class="paragraph">
+      Can you see clearly ?
+      <span style="font-size: 16px"
+        >if you are drunk, you won't be able to see it clearly!</span
+      >
+    </p>
 
     <style>
       :root {
@@ -44,10 +50,15 @@
         --blur: 10px;
       }
 
-      img {
+      .paragraph {
         padding: var(--spacing);
         background: var(--base);
         filter: blur(var(--blur));
+        width: 500px;
+        height: 350px;
+        margin: auto auto;
+        text-align: center;
+        align-content: center;
       }
 
       .hl {
@@ -88,9 +99,9 @@
       }
 
       inputs.forEach((input) => input.addEventListener("change", handleUpdate));
-        inputs.forEach((input) =>
-          input.addEventListener("mousemove", handleUpdate)
-        );
+      inputs.forEach((input) =>
+        input.addEventListener("mousemove", handleUpdate)
+      );
     </script>
   </body>
 </html>
